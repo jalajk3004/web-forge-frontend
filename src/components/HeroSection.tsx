@@ -82,13 +82,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button
-              size="lg"
-              className="bg-gradient-primary hover:opacity-90 shadow-medium text-lg px-8 py-6 group"
-            >
-              Get a Free Consultation
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            
             <Button
               size="lg"
               variant="outline"

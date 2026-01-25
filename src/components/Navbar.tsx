@@ -29,11 +29,10 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/80 backdrop-blur-lg shadow-soft"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? "bg-background/80 backdrop-blur-lg shadow-soft"
+        : "bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -44,9 +43,16 @@ const Navbar = () => {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center shadow-medium">
-              <span className="text-xl font-bold text-primary-foreground">W</span>
+            <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shadow-medium overflow-hidden">
+              <img
+                src="/logo.png"
+                alt="WebForge Logo"
+                className="h-full w-full object-contain scale-[2.0]"
+              />
             </div>
+
+
+
             <span className="text-2xl font-bold text-foreground">
               Web<span className="text-gradient">Forge</span>
             </span>

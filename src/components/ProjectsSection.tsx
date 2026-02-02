@@ -125,8 +125,15 @@ const ProjectsSection = () => {
                     >
                       <div className="absolute inset-0 bg-black/20" />
                       <span className="text-4xl font-bold text-white relative z-10">
-                        <a href = `${project.url}` >project.title.charAt(0)}</a>{
-                      </span>
+  <a
+    href={project.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:underline"
+  >
+    {project.title.charAt(0)}
+  </a>
+</span>
                       {/* Decorative elements */}
                       <div className="absolute top-4 right-4 w-20 h-20 rounded-full bg-white/10 blur-xl" />
                       <div className="absolute bottom-4 left-4 w-16 h-16 rounded-full bg-white/10 blur-xl" />

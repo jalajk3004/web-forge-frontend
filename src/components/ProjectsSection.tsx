@@ -125,14 +125,9 @@ const ProjectsSection = () => {
                     >
                       <div className="absolute inset-0 bg-black/20" />
                       <span className="text-4xl font-bold text-white relative z-10">
-  <a
-    href={project.url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:underline"
-  >
+  
     {project.title.charAt(0)}
-  </a>
+ 
 </span>
                       {/* Decorative elements */}
                       <div className="absolute top-4 right-4 w-20 h-20 rounded-full bg-white/10 blur-xl" />
@@ -142,9 +137,16 @@ const ProjectsSection = () => {
                     {/* Content */}
                     <div className="space-y-4">
                       <div>
+                        <a
+    href={project.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:underline"
+  >
                         <h3 className="text-2xl font-bold text-foreground">
                           {project.title}
                         </h3>
+                          </a> 
                         <p className="text-primary font-medium">{project.subtitle}</p>
                       </div>
 

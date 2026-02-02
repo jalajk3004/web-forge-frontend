@@ -21,6 +21,7 @@ import {
 const projects = [
   {
     title: "BizCommand",
+    url: "https://business-dashboard-wine.vercel.app/",
     subtitle: "Business Dashboard & Admin Panel",
     description:
       "A full-stack business dashboard and admin panel designed to help businesses monitor performance, manage users, and control internal operations from a single interface.",
@@ -39,6 +40,7 @@ const projects = [
   },
   {
     title: "E-Commerce Platform",
+    url: "https://eecommerce-ten.vercel.app/",
     subtitle: "Full-Stack Online Store",
     description:
       "A complete e-commerce solution with product management, cart functionality, secure checkout, and order tracking for modern online businesses.",
@@ -53,22 +55,7 @@ const projects = [
     techStack: ["React", "Node.js", "PostgreSQL", "Stripe"],
     gradient: "from-purple-600 to-pink-500",
     image: null,
-  },
-  {
-    title: "Real-Time Chat App",
-    subtitle: "WebSocket-Powered Communication",
-    description:
-      "A real-time messaging application with instant message delivery, typing indicators, online status, and group chat functionality.",
-    features: [
-      { icon: Zap, text: "Instant Messaging" },
-      { icon: Users, text: "Group Chats" },
-      { icon: Shield, text: "End-to-End Security" },
-      { icon: Layout, text: "Modern Interface" },
-    ],
-    techStack: ["React", "Socket.io", "Node.js", "MongoDB"],
-    gradient: "from-green-600 to-teal-500",
-    image: null,
-  },
+  }
 ];
 
 const ProjectsSection = () => {
@@ -89,7 +76,7 @@ const ProjectsSection = () => {
             transition={{ duration: 0.5 }}
             className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6"
           >
-            Our Projects
+            Our Projects 
           </motion.span>
 
           <motion.h2
@@ -138,7 +125,7 @@ const ProjectsSection = () => {
                     >
                       <div className="absolute inset-0 bg-black/20" />
                       <span className="text-4xl font-bold text-white relative z-10">
-                        {project.title.charAt(0)}
+                        <a href = `${project.url}` >project.title.charAt(0)}</a>{
                       </span>
                       {/* Decorative elements */}
                       <div className="absolute top-4 right-4 w-20 h-20 rounded-full bg-white/10 blur-xl" />

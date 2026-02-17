@@ -58,9 +58,9 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground mb-6"
           >
-            We Build Modern, Secure
+            We build conversion-focused websites
             <br />
-            <span className="text-gradient">& Scalable Web Applications</span>
+            <span className="text-gradient">& SaaS for startups & creators</span>
           </motion.h1>
 
           {/* Subtext */}

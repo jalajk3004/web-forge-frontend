@@ -16,6 +16,7 @@ import {
   Settings,
   Layout,
   Database,
+  MessageCircle,
 } from "lucide-react";
 
 const projects = [
@@ -55,7 +56,37 @@ const projects = [
     techStack: ["React", "Node.js", "PostgreSQL", "Stripe"],
     gradient: "from-purple-600 to-pink-500",
     image: null,
-  }
+  },
+  {
+    title: "Reliable Construction Solution",
+    url: "https://reliableconstructionsolution.com/",
+    subtitle: "Business Dashboard",
+    description:
+      "RELIABLE CONSTRUCTIONS offers a wide range of construction services. From architectural, civil, and electrical design, to complete facility construction and renovation, we draw on years of experience to deliver innovative and cost-effective construction projects.",
+    features: [
+      { icon: MessageCircle, text: "Whatsapp Integration" },
+      { icon: Settings, text: "User Management" },
+      { icon: Layout, text: "Responsive UI" },
+    ],
+    techStack: ["Next.js", "React", "Node.js", "Tailwind CSS"],
+    gradient: "from-blue-600 to-cyan-500",
+    image: null, // Placeholder for project image
+  },
+  {
+    title: "Raftra OS",
+    url: "https://frontend-blue-five-wrac9qlzrm.vercel.app/",
+    subtitle: "AI frontend",
+    description:
+      "Complete AI-powered marketing operating system. Launch Campaign in 30 minutes, automate creative production, optimize performance, and scale your brand growth—all in one platform.",
+    features: [
+      
+      { icon: Layout, text: "Responsive UI" },
+      
+    ],
+    techStack: ["Next.js", "React", "Node.js", "Tailwind CSS"],
+    gradient: "from-blue-600 to-cyan-500",
+    image: null, // Placeholder for project image
+  },
 ];
 
 const ProjectsSection = () => {

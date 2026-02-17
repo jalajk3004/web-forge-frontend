@@ -39,7 +39,7 @@ const HeroSection = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
         <div className="text-center">
           {/* Founders Badge */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -49,7 +49,7 @@ const HeroSection = () => {
             <span className="text-sm font-medium text-muted-foreground">
               Founded by <span className="text-foreground font-semibold">Jalaj Kumar</span> & <span className="text-foreground font-semibold">Manan Muchan</span>
             </span>
-          </motion.div>
+          </motion.div> */}
 
           {/* Main Headline */}
           <motion.h1
@@ -110,7 +110,7 @@ const HeroSection = () => {
           >
             {[
               { value: "3+", label: "Years Experience" },
-              { value: "50+", label: "Projects Delivered" },
+              { value: "2", label: "Projects Delivered" },
               { value: "100%", label: "Client Satisfaction" },
             ].map((stat, index) => (
               <motion.div

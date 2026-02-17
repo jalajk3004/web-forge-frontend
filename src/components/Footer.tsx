@@ -25,10 +25,9 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Github, href: "https://github.com/web-forge-stack", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/web-forge-2032903a8/", label: "LinkedIn" },
+  { icon: Instagram, href: "https://www.instagram.com/web.forge._?igsh=OWJlaHg2NjVneHJs&utm_source=qr", label: "Instagram" },
 ];
 
 const Footer = () => {
